@@ -19,7 +19,7 @@
         {% for planet in planets %}
             <h2>{{planet}}</h2>       
             <div class="{{planet}}" id="planet-box">
-                <img src="/static/assets/planets/{{planet}}.png" alt="">
+                <img src="/static/assets/planets/{{planet.lower()}}.png" alt="">
                 <p>{{details[planet]['info']}}</p>     
             </div>
         {% endfor %}
