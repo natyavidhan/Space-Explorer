@@ -1,0 +1,232 @@
+html,
+body {
+  background-color: black;
+  background-image: url("https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  text-align: center;
+  display: block;
+  padding-top: 30px;
+  font-family: "Space Grotesk" !important;
+}
+
+h1 {
+  color: white !important;
+  font-weight: bold;
+}
+
+wbg {
+  background-color: white;
+  color: black;
+  padding: 3px 10px 3px 10px;
+  font-weight: bold;
+  font-size: 17px;
+  border: 0px solid;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+p {
+  margin-block-start: 100px;
+  background-color: #0000008c;
+  color: white;
+  padding: 30px;
+  border: 0px solid;
+  border-radius: 20px;
+  max-width: 80%;
+  position: relative;
+  display: inline-block;
+  backdrop-filter: blur(5px);
+}
+
+.loader {
+  /* background-color: #2c3e50; */
+  display: inline-block !important;
+  height: 100%;
+  width: 100%;
+  position: relative !important;
+  transform: translate(-50%, -50%);
+  margin-top: 130px;
+  margin-bottom: 130px;
+  left: 50%;
+}
+.sun {
+  background: radial-gradient(#ff0, #f90);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.planetX {
+  position: absolute;
+  z-index: 100;
+  border-radius: 50%;
+}
+.planet1 {
+  left: 20px;
+  height: 13px;
+  width: 13px;
+  background-color: #ff8;
+}
+.planet2 {
+  left: 23px;
+  height: 20px;
+  width: 20px;
+  background: linear-gradient(#00ff00, #09f, #09f);
+  -webkit-animation: rotation 1s infinite linear;
+  animation: rotation 1s infinite linear;
+}
+.planet3 {
+  left: 49px;
+  height: 17px;
+  width: 17px;
+  background: radial-gradient(#ff9900, #ff4400);
+}
+.orbit {
+  background: transparent;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.orbit1 {
+  height: 100px;
+  width: 100px;
+  -webkit-animation: rotation 2s infinite linear;
+  -moz-animation: rotation 2s infinite linear;
+  animation: rotation 2s infinite linear;
+}
+.orbit2 {
+  height: 150px;
+  width: 150px;
+  -webkit-animation: rotation 3s infinite linear;
+  -moz-animation: rotation 3s infinite linear;
+  animation: rotation 3s infinite linear;
+}
+.orbit3 {
+  height: 200px;
+  width: 200px;
+  -moz-animation: rotation 6s infinite linear;
+  -webkit-animation: rotation 6s infinite linear;
+  animation: rotation 6s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+@-moz-keyframes rotation {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(359deg);
+  }
+}
+.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  font-size: 50px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 2px 2px #000;
+}
+
+#planets {
+  height: 1024/5px;
+  width: 3500/5px;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  min-height: 400px;
+  padding: 70px 20vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-button{
+  text-decoration: none;
+  border-bottom: 6px solid rgb(145, 84, 34);
+  border-radius: 15px;
+  background-color: rgb(226, 130, 52);
+  color: rgb(255, 255, 255);
+  width: 200px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.section-button:hover{
+  background-color: rgb(235, 140, 62);
+  transform: scale(1.025);
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding: 25px;
+  border-top: 5px solid #fff;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  background: rgba(255, 166, 0, 0);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(111, 111, 111);
+  border-radius: 20px;
+}
+.container{
+  width: 90%;
+}
+
+@media screen and (max-width: 768px) {
+  section{
+    flex-direction: column;
+  }
+  section a{
+    padding-top: 10px;
+  }
+}

@@ -1,0 +1,95 @@
+html,
+body {
+  background-color: black;
+  background-image: url("https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  text-align: center;
+  display: block;
+  padding-top: 30px;
+  font-family: "Space Grotesk" !important;
+}
+
+h1 {
+  color: white !important;
+  font-weight: bold;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  min-height: 400px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-button{
+  text-decoration: none;
+  border-bottom: 6px solid rgb(145, 84, 34);
+  border-radius: 15px;
+  background-color: rgb(226, 130, 52);
+  color: rgb(255, 255, 255);
+  width: 200px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.section-button:hover{
+  background-color: rgb(235, 140, 62);
+  transform: scale(1.025);
+}
+
+.section-button:disabled{
+  background-color: rgb(145, 84, 34);
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding: 25px;
+  border-top: 5px solid #fff;
+  /* position: fixed; */
+  bottom: 0px;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  background: rgba(255, 166, 0, 0);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(111, 111, 111);
+  border-radius: 20px;
+}
+.container{
+  width: 90%;
+}
+
+@media screen and (max-width: 1500px) {
+  section{
+    flex-direction: column;
+  }
+  section a{
+    padding-top: 10px;
+  }
+}
+
+p{
+  font-size: 20px;
+  color: #fff;
+}
