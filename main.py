@@ -45,8 +45,7 @@ def co_objects(objectName):
 def factAPI():
     doc = requests.get("https://fungenerators.com/random/facts/space/").text
     soup = BeautifulSoup(doc, 'html.parser')
-    fact = soup.find('h2', attrs = {'class':'wow'}).text
-    return fact
+    return soup.find('h2', attrs = {'class':'wow'}).text
 
 @app.route('/fact')
 def fact():
